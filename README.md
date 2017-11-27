@@ -34,7 +34,7 @@ If you want to make significant changes to the site, it's recommended you do so 
 * Text Editor
 
 ### Installation
-
+Notes: https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 #### Clone the Repository
 `git clone https://github.com/code4newark/codefornewark.org.git`
 
