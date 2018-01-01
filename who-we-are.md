@@ -1,6 +1,6 @@
 ---
 title: Who We Are
-author: Open Savannah
+author: Code for Newark
 layout: default
 permalink: /who-we-are/
 ---
