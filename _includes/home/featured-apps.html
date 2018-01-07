@@ -7,7 +7,7 @@
       <div class="col-sm-4">
         <div class="panel panel-default">
           <a href="{{ app.url }}" target="_blank">
-            <div class="panel-thumbnail"><img src="/images/apps/{{ app.image }}" class="img-responsive"></div>
+            <div class="panel-thumbnail"><img src="{{ site.baseurl }}images/apps/{{ app.image }}" class="img-responsive"></div>
           </a>
           <div class="panel-body">
             <p class="lead">{{ app.name }}</p>
@@ -17,7 +17,7 @@
         </div>
       </div><!--/col-->
       {% endfor %}
-      
+
     </div>
   </div>
 </section>
