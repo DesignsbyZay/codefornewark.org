@@ -1,6 +1,6 @@
 ---
 title: Contact
-author: Open Savannah
+author: Code for Newark
 layout: default
 permalink: /contact/
 ---
