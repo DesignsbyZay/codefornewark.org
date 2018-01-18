@@ -1,8 +1,13 @@
 ---
+title: Contribute to your community with tech!
 layout: default
 permalink: /skills/
 ---
 
-<div data-paperform-id="vtrlqozk"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed"; document.body.appendChild(script); })()</script>
-
-<!-- form based off the active projects found on http://forum.opensavannah.org/c/active-projects> -->
+<form action="https://formspree.io/davidruffner@gmail.com"
+      method="POST">
+		<input type="email" name="_replyto" placeholder="Your email">
+    <input type="hidden" name="_subject" value="Volunteer submission!" />
+	  <textarea name="message" placeholder="Your skills"></textarea>
+	  <button type="submit">Send</button>
+</form>

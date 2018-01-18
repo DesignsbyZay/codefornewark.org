@@ -1,5 +1,13 @@
 ---
+title: Pitch your idea!
 layout: default
 permalink: /ideas/
 ---
-<div data-paperform-id="rcovj04l"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed"; document.body.appendChild(script); })()</script>
+
+<form action="https://formspree.io/davidruffner@gmail.com"
+      method="POST">
+		<input type="email" name="_replyto" placeholder="Your email">
+    <input type="hidden" name="_subject" value="Idea submission!" />
+	  <textarea name="message" placeholder="Your idea"></textarea>
+	  <button type="submit">Send</button>
+</form>
