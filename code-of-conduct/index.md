@@ -26,7 +26,7 @@ The Code for Newark community expects that our network activities, events, and d
 
 Code for Newark, as a brigade of Code For America, reserves the right to ask anyone in violation of these policies not to participate in Code for America network activities, events, and digital forums.
 
-#### Code for Newark's Anti-Harassment Policy
+<!-- #### Code for Newark's Anti-Harassment Policy
 
 This anti-harassment policy is based on <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">the example policy</a> from the Geek Feminism wiki, created by the Ada Initiative and other volunteers.
 
@@ -58,4 +58,4 @@ SUBJECT: Safe Space alert at [EVENT NAME]
 
 I am writing because of harassment at a Code for America Communities event, (NAME, PLACE, DATE OF EVENT).
 
-You can reach me at (CONTACT INFO). Thank you.
+You can reach me at (CONTACT INFO). Thank you. -->
