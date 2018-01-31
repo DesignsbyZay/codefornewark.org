@@ -5,7 +5,7 @@ layout: default
 permalink: /contact/
 ---
 
-#### [Email](mailto:carl@opensavannah.org) &#124; [Twitter](https://twitter.com/open_savannah) &#124; [Meetup](http://www.meetup.com/opensavannah/)
+#### [Email](mailto:codefornewark.info@gmail.com) &#124; [Twitter](https://twitter.com/codefornewark) &#124; [Meetup](http://www.meetup.com/Code-For-Newark/)
 
 <hr />
 
