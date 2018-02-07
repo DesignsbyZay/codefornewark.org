@@ -65,6 +65,14 @@ footer li {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+.fa-wrench:hover, .fa-lightbulb-o:hover, .fa-calendar-o:hover {
+    color: red;
+}
+
+.btn:hover {
+    color: white;
+}
+
 /* CodeAcross landing page */
 .banner {
   width: 100%;
