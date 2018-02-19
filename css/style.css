@@ -73,23 +73,6 @@ footer li {
     color: white;
 }
 
-/* CodeAcross landing page */
-.banner {
-  width: 100%;
-  padding-bottom: 30px;
-}
-.codeacross p, .codeacross .p {
-  font-size: 22px;
-}
-.heart {
-  color: red;
-}
-.cushion {
-  padding: 15px;
-}
-.lower {
-  margin-top: 20px;
-}
 
 /* Projects */
 .contributors img {
