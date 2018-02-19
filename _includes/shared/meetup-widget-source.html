@@ -99,12 +99,11 @@
 			$('.mug-badge', ctx).append(
 				'<div class="mup-widget">\
 					<div class="mup-bd">\
-            <span class="mup-stats">' + addImage(group["group_photo"] ? group.group_photo.photo_link : "", group.name) + '</span>\
-            <span>' + numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
-            <span class="mup-stats"><div class="next-event"></div></span>\
+            <span class="mup-stats">' + addImage(group["group_photo"] ? group.group_photo.photo_link : "", group.name) + numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
+            <span class="mup-tlabel"><div class="next-event"></div></span>\
 					</div>\
 					<div class="mup-ft">\
-						<div class="mup-logo"><div style="float:left;">'+addLink('<img src="https://a248.e.akamai.net/secure.meetupstatic.com/img/84869143793177372874/birddog/everywhere_widget.png">','http://www.meetup.com')+'</div><div style="float:right;"><div style="float:right;">'+addStarRating(group.rating)+'</div><br><div style="float:right;"><span class="mup-tlabel">Group Rating</span></div></div></div>\
+						<div class="mup-logo"><div style="float:left;">'+addLink('<img src="https://a248.e.akamai.net/secure.meetupstatic.com/img/84869143793177372874/birddog/everywhere_widget.png">','http://www.meetup.com')+'</div><div style="float:right;"><div style="float:right;">'+addStarRating(group.rating)+'</div><br><div style="float:right;"></div></div></div>\
 						<div class="mup-getwdgt">' + addLink('ADD THIS TO YOUR SITE', 'http://www.meetup.com/meetup_api/foundry/#'+$parameters._name.toLowerCase().replace(/ /g,"-")) + '</div>\
 					</div>\
 				</div>'
@@ -159,17 +158,20 @@
 	});
 </script>
 <style type="text/css" media="screen">
+/* html {
+  background-color: #FAFAFA;
+} */
 .next-event {
-
+  background-color: red;
 }
 .mug-badge {
 	font-family: "lucida grande", lucida, tahoma, helvetica, arial, sans-serif !important;
-	font-size: 12px;
+	font-size: 16px;
 }
 .mug-badge .mup-widget,
 .mug-badge .mup-widget .mup-hd a {
-	background: #FAFAFA;
-	color: black;
+	background: white;
+	color: #444444;
 }
 .mug-badge .mup-widget {
 	border-radius: 5px;
@@ -185,14 +187,14 @@
 }
 .mug-badge .mup-widget h3 {
 	font-size: 18px;
-	color: black;
+	color: #444444;
 	font-weight: bold;
 }
 .mug-badge .mup-widget h4 {
-	font-size: 13px;
+	font-size: 16px;
 }
 .mug-badge .mup-widget h5 {
-	font-size: 20px;
+	font-size: 14px;
 	margin: 0 auto;
 	text-align: center;
 	letter-spacing: -1px;
@@ -204,7 +206,7 @@
 .mug-badge .mup-widget .mup-bd,
 .mug-badge .mup-widget .mup-timeline,
 .mug-badge .mup-widget .mup-bd p {
-	color: #FAFAFA;
+	color: #444444;
 }
 .mug-badge .mup-widget .mup-bd {
 	border-radius: 5px;
@@ -212,12 +214,12 @@
 	-webkit-border-radius: 5px;
 	padding: 8px 6px;
 	margin: 0 8px;
-	background: #FAFAFA;
+	background: white;
 }
 .mug-badge .mup-widget a,
 .mug-badge .mup-widget a:active,
 .mug-badge .mup-widget a:visited {
-	color: #FAFAFA;
+	color: black;
 	text-decoration: none;
 }
 .mug-badge .mup-widget a:hover {
@@ -225,8 +227,8 @@
     text-decoration: none;
 }
 .mug-badge .mup-widget .mup-tlabel {
-	font-size: 10px;
-	color: #AAA;
+	font-size: 12px;
+	color: #444444;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 2px;
@@ -237,31 +239,12 @@
 	margin: 6px 0;
 	padding: 4px;
 	text-align: center;
-	background: #FAFAFA;
+	background: white;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 }
-.mug-badge .mup-widget .mup-button {
-    width: 30px;
-	display:block;
-	margin: 0 auto;
-	padding: 2px 4px;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2266BB), to(#102f56));
-	background: -moz-linear-gradient(0% 100% 90deg,#102F56, #2266BB);
-	background-color: #FAFAFA;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	font-size: 10px;
-	font-weight: bold;
-	color: black;
-	text-align: center;
-	border: 1px solid #0d2748;
-}
-.mug-badge .mup-widget .mup-button:hover {
-    color: white;
-}
+
 .mug-badge .mup-widget .mup-img {
     overflow: hidden;
 	border-radius: 3px;
@@ -276,7 +259,7 @@
 	padding: 3px 0;
 	font-size: 8px;
 	text-align: center;
-	background: #FAFAFA;
+	background: white;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomright: 5px;
