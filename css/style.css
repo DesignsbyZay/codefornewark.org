@@ -59,6 +59,8 @@ footer li {
   overflow: hidden;
   max-width: 2560px;
   z-index: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .jumbotron h1, .jumbotron .h1 {
   color: #fff;
