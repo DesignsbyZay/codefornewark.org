@@ -1,14 +1,14 @@
 (function () {
-	
-	var cfapi = 'http://api.codeforamerica.org/api/organizations/Open-Savannah/projects';
+
+	var cfapi = 'http://api.codeforamerica.org/api/organizations/Code-For-Newark/projects';
 
 	var displayProjects = function (data) {
 
 		data.objects.forEach(function (project) {
-			
+
 			project.lastUpdateDaysFromNow = moment(project.last_updated).fromNow();
 		});
-		
+
 		var template = Handlebars.compile($('#project-template').html());
 		$('#projects').append(template({ projects: data.objects }));
 
@@ -17,9 +17,9 @@
 			.done(displayProjects);
 		}
 	};
-	
+
 	$(document).ready(function () {
-    
+
 		$.getJSON(cfapi)
 		.done(displayProjects);
 	});
