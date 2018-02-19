@@ -45,6 +45,12 @@ footer li {
   background: url('https://code4newark.github.io/codefornewark.org/images/pbs.twimg.com_profile_banners_2321041530_1391185992_sepia.jpg') center center no-repeat;
   background-size: cover;
 }
+
+.cta-img {
+  width: 100%;
+  max-width: 1000px;
+}
+
 .jumbotron-wrapper {
   position: relative;
   margin: 0 auto;
