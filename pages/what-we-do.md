@@ -1,6 +1,6 @@
 ---
 title: What We Do
-author: Open Savannah
+author: Code For Newark
 layout: default
 permalink: /what-we-do/
 ---
