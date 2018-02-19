@@ -6,8 +6,8 @@
 <script id="config" type="text/javascript" charset="utf-8">
   var $parameters = {
     urlname: "Code-For-Newark",
-    width: 350,
-    height:500,
+    width: 300,
+    height:570,
     _name: "Meetup Group Stats",
     _description: "Shows basic stats on your favorite Meetup group."
   };
@@ -99,8 +99,9 @@
 			$('.mug-badge', ctx).append(
 				'<div class="mup-widget">\
 					<div class="mup-bd">\
-						<span class="mup-stats">' + addImage(group["group_photo"] ? group.group_photo.photo_link : "", group.name) + '</span>\
-            <span>' + numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
+						<h3>' + addLink(group.name, group.link) + '</h3>\
+            <h4> <div style="padding-top:5px;"><span class="mup-tlabel">EST. '+ getFormattedDate(group.created)+'</span></div></h4>\
+						<span class="mup-stats">' + addImage(group["group_photo"] ? group.group_photo.photo_link : "", group.name) + numberFormat(group.members) + '<span class="mup-tlabel"> '+ group.who+'</span></span>\
             <span class="mup-stats"><div class="next-event"></div></span>\
             <h4><span class="mup-button">'+ addLink('JOIN',group.link)+'</span></h4>\
 					</div>\
@@ -151,7 +152,7 @@
                        venue_addr = "";
                     }
                     var location = venue_addr + city + ", " + state_country;
-                    $('.next-event', ctx).append('<h4><div class="mup-tlabel">'+getFormattedDate(event.time) + '   |   ' + getFormattedTime(event.time) + "</div>" + addLink(event.name, event.event_url)+'<div class="mup-tlabel">' + location + "</div></h4>");
+                    $('.next-event', ctx).append('<h4><div class="mup-tlabel">'+getFormattedDate(event.time) + '   |   ' + getFormattedTime(event.time) + "</div>" + addLink(event.name, event.event_url)+'<div class="mup-tlabel">' + location + "</div></h4>");
                 }
             }
             });
